@@ -9,8 +9,10 @@ class LeapCodeTest {
 	@Test
 	void test() {
 		LeapYear leap = new LeapYear();
-		bool val = isLeap(1000);
-		assertEquals(val,True);
+		boolean val = leap.isLeap(1000);
+		assertEquals(val,true);
 	}
+
+
 
 }
