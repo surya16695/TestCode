@@ -10,26 +10,32 @@ class LeapCodeTest {
 	void test1() {
 		LeapYear leap = new LeapYear();
 		boolean val = leap.isLeap(2000);
-		assertEquals(val,true);
+		assertTrue(val);
 	}
 	@Test
 	void test2() {
 		LeapYear leap = new LeapYear();
 		boolean val = leap.isLeap(2020);
-		assertEquals(val,true);
+		assertTrue(val);
 	}
 	
 	@Test
 	void test3(){
 		LeapYear leap = new LeapYear();
 		boolean val = leap.isLeap(2001);
-		assertEquals(val,false);
+		assertFalse(val);
 	}
 	
 	@Test
 	void test4(){
 		LeapYear leap = new LeapYear();
 		boolean val = leap.isLeap(1996);
-		assertEquals(val,true);
+		assertTrue(val);
+	}
+	@Test
+	void test5(){
+		LeapYear leap = new LeapYear();
+		boolean val = leap.isLeap(1995);
+		assertFalse(val);
 	}
 }
