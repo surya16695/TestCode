@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class LeapCodeTest {
-
+	
 	@Test
 	void test1() {
 		LeapYear leap = new LeapYear();
@@ -22,7 +22,14 @@ class LeapCodeTest {
 	@Test
 	void test3(){
 		LeapYear leap = new LeapYear();
-		boolean val = leap.isLeap(1458);
+		boolean val = leap.isLeap(2001);
 		assertEquals(val,false);
+	}
+	
+	@Test
+	void test4(){
+		LeapYear leap = new LeapYear();
+		boolean val = leap.isLeap(1996);
+		assertEquals(val,true);
 	}
 }
